@@ -19,7 +19,7 @@ export default function Home() {
                 {/* Dynamic Background */}
                 <div className="absolute inset-0 z-0">
                     {/* Gradient Overlay */}
-                    {/* <div className="absolute inset-0 bg-gradient-to-br from-brand-dark via-brand-dark/90 to-black z-10" /> */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-brand-dark via-brand-dark/10 to-black z-10" />
 
                     {/* Floating Parallax Images */}
                     <ParallaxImages />
@@ -75,7 +75,7 @@ export default function Home() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1, duration: 1 }}
-                    className="absolute bottom-10 left-1/2 -translate-x-1/2 text-gray-500 animate-bounce z-20"
+                    className="absolute bottom-32 left-1/2 -translate-x-1/2 text-gray-500 animate-bounce z-20"
                 >
                     <ChevronDown className="w-6 h-6" />
                 </motion.div>
