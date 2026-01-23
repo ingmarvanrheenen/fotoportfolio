@@ -3,6 +3,8 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { ChevronDown, ArrowRight, Camera, Aperture, Image as ImageIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { portfolioItems } from '../data/portfolioData';
+import LoadingImage from '../components/LoadingImage';
+import LoadingOverlay from '../components/LoadingOverlay';
 import IngmarImage from '../assets/home/Ingmar.jpg';
 
 export default function Home() {
@@ -13,6 +15,7 @@ export default function Home() {
 
     return (
         <div className="relative overflow-x-hidden">
+            <LoadingOverlay />
 
             {/* --- HERO SECTION --- */}
             <section className="relative h-screen flex items-center justify-center overflow-hidden" ref={scrollRef}>
@@ -44,7 +47,7 @@ export default function Home() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     >
                         <h2 className="text-brand-accent text-sm md:text-base uppercase tracking-[0.3em] mb-4">
-                            Fotografie Portfolio
+                            Ingmar van Rheenen
                         </h2>
                         <h1 className="text-6xl md:text-9xl font-serif text-white mb-6 leading-tight">
                             Vang het <span className="italic text-brand-accent">Moment</span>
@@ -109,10 +112,11 @@ export default function Home() {
                                 transition={{ delay: index * 0.2 }}
                                 className="group relative aspect-[4/5] overflow-hidden rounded-xl bg-neutral-800"
                             >
-                                <img
+                                <LoadingImage
                                     src={item.image}
                                     alt={item.title}
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    className="w-full h-full"
+                                    imageClassName="object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                                     <h3 className="text-xl font-serif text-white">{item.title}</h3>
@@ -195,10 +199,11 @@ export default function Home() {
                         >
                             <div className="aspect-[3/4] rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
                                 {/* Placeholder for photographer portrait */}
-                                <img
+                                <LoadingImage
                                     src={IngmarImage}
                                     alt="Photographer"
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full"
+                                    imageClassName="object-cover"
                                 />
                             </div>
                             {/* Decorative elements */}
@@ -213,7 +218,7 @@ export default function Home() {
                             className="md:w-1/2"
                         >
                             <h4 className="text-brand-accent uppercase tracking-widest text-sm mb-2">De Fotograaf</h4>
-                            <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Ivan Rheenen</h2>
+                            <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Ingmar van Rheenen</h2>
                             <p className="text-gray-300 text-lg leading-relaxed mb-6">
                                 Fotografie is voor mij meer dan alleen een plaatje schieten; het is kijken met aandacht.
                                 <br /><br />
@@ -246,12 +251,12 @@ function ParallaxImages() {
 
     // Select 4-5 random images from portfolioItems (stable selection)
     const floatingImages = [
-        { src: portfolioItems[1]?.image, left: '15%', top: '20%', speed: y1, scale: 0.8, rotation: -5 },
-        { src: portfolioItems[3]?.image, left: '80%', top: '15%', speed: y2, scale: 1.1, rotation: 10 },
-        { src: portfolioItems[2]?.image, left: '10%', top: '70%', speed: y3, scale: 0.9, rotation: 15 },
-        { src: portfolioItems[6]?.image, left: '85%', top: '60%', speed: y4, scale: 1.2, rotation: -10 },
+        { src: portfolioItems[0]?.image, left: '15%', top: '20%', speed: y1, scale: 0.8, rotation: -5 },
+        { src: portfolioItems[2]?.image, left: '80%', top: '15%', speed: y2, scale: 1.1, rotation: 10 },
+        { src: portfolioItems[3]?.image, left: '10%', top: '70%', speed: y3, scale: 0.9, rotation: 15 },
+        { src: portfolioItems[4]?.image, left: '85%', top: '60%', speed: y4, scale: 1.2, rotation: -10 },
         // Central-ish back layer
-        { src: portfolioItems[8]?.image, left: '45%', top: '50%', speed: y1, scale: 1.6, rotation: 0, className: "blur-[1px] opacity-30" },
+        { src: portfolioItems[1]?.image, left: '45%', top: '50%', speed: y1, scale: 1.6, rotation: 0, className: "blur-[1px] opacity-30" },
     ].filter(img => img.src);
 
     return (

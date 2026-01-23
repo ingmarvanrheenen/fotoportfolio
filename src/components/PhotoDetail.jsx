@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, Info, Sliders, Image as ImageIcon, Maximize2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import LoadingImage from './LoadingImage';
 
 export default function PhotoDetail({ item, onClose }) {
     const [showOriginal, setShowOriginal] = useState(false);
@@ -33,14 +34,12 @@ export default function PhotoDetail({ item, onClose }) {
                     <div className="relative md:w-2/3 h-1/2 md:h-full bg-black flex items-center justify-center group">
                         {/* Image Container with Toggle */}
                         <div className="relative w-full h-full p-4 md:p-8 flex items-center justify-center">
-                            <motion.img
+                            <LoadingImage
                                 key={showOriginal ? 'original' : 'edited'}
-                                initial={{ opacity: 0.8 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ duration: 0.3 }}
                                 src={showOriginal ? item.imageOriginal : item.image}
                                 alt={item.title}
-                                className="max-w-full max-h-full object-contain cursor-zoom-in"
+                                className="w-full h-full flex items-center justify-center"
+                                imageClassName="max-w-full max-h-full object-contain cursor-zoom-in"
                                 onClick={() => setIsFullScreen(true)}
                             />
 
@@ -171,12 +170,11 @@ export default function PhotoDetail({ item, onClose }) {
                         <X className="h-8 w-8" />
                     </button>
 
-                    <motion.img
-                        initial={{ scale: 0.9 }}
-                        animate={{ scale: 1 }}
+                    <LoadingImage
                         src={showOriginal ? item.imageOriginal : item.image}
                         alt={item.title}
-                        className="max-w-full max-h-full object-contain"
+                        className="w-full h-full flex items-center justify-center p-4"
+                        imageClassName="max-w-full max-h-full object-contain"
                     />
                 </motion.div>
             )}

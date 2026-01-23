@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { portfolioCategories, portfolioItems } from '../data/portfolioData';
 import PhotoDetail from '../components/PhotoDetail';
+import LoadingImage from '../components/LoadingImage';
 import { ArrowLeft, Camera, FolderOpen } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -74,10 +75,11 @@ export default function Gallery() {
                                 {/* Background Image */}
                                 {category.image ? (
                                     <div className="absolute inset-0">
-                                        <img
+                                        <LoadingImage
                                             src={category.image}
                                             alt={category.title}
-                                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60"
+                                            className="w-full h-full"
+                                            imageClassName="object-cover transition-transform duration-700 group-hover:scale-110 opacity-60"
                                         />
                                     </div>
                                 ) : (
@@ -128,7 +130,12 @@ export default function Gallery() {
                                     onClick={() => setSelectedPhoto(item)}
                                     className="group relative aspect-[4/5] overflow-hidden rounded-xl bg-neutral-900 border border-white/5 shadow-lg"
                                 >
-                                    <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                                    <LoadingImage
+                                        src={item.image}
+                                        alt={item.title}
+                                        className="w-full h-full"
+                                        imageClassName="object-cover transition-transform duration-700 group-hover:scale-110"
+                                    />
                                     <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center backdrop-blur-[2px]">
                                         <span className="text-brand-accent font-serif text-xl italic mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                                             {item.title}
