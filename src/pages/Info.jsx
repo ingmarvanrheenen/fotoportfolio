@@ -46,52 +46,12 @@ export default function Info() {
                     </div>
                 </motion.section>
 
-                {/* Mappenstructuur */}
-                <motion.section id="structuur" variants={sectionVariants}>
-                    <div className="flex items-baseline space-x-4 mb-8 border-b border-white/10 pb-4">
-                        <span className="text-brand-accent font-mono text-sm">02.</span>
-                        <h2 className="text-3xl font-serif text-white">Mappenstructuur</h2>
-                    </div>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        <div>
-                            <p className="text-gray-300 mb-6">
-                                De structuur van dit project is logisch opgebouwd om de verschillende categorieën te scheiden.
-                                De originele bestanden worden in een aparte map bijgeleverd, zoals te zien in het schema.
-                            </p>
-                            <div className="bg-neutral-900 p-8 rounded-xl border border-white/10 font-mono text-sm shadow-2xl relative overflow-hidden group">
-                                <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
-                                    <span className="text-6xl text-white">/</span>
-                                </div>
-                                <div className="text-brand-accent mb-3 font-bold">/ Portfolio_IvanRheenen</div>
-                                <div className="pl-4 border-l border-white/10 space-y-3">
-                                    <div className="text-gray-300 flex items-center"><span className="text-gray-600 mr-2">├──</span> 📁 Originele_Fotos/</div>
-                                    <div className="text-gray-300 flex items-center"><span className="text-gray-600 mr-2">├──</span> 🌐 Portfolio_App/</div>
-                                    <div className="pl-6 border-l border-white/10 space-y-2 text-gray-500 text-xs">
-                                        <div>├── public/ <span className="text-gray-600 ml-2">// Assets & Fotobestanden</span></div>
-                                        <div>├── src/ <span className="text-gray-600 ml-2">// React Componenten</span></div>
-                                        <div>└── index.html</div>
-                                    </div>
-                                    <div className="text-gray-300 flex items-center"><span className="text-gray-600 mr-2">└──</span> 📄 Leesmij.txt</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex flex-col justify-center space-y-4">
-                            <div className="bg-neutral-800/50 p-6 rounded-lg border border-white/5 hover:border-brand-accent/20 transition-colors">
-                                <h4 className="text-white font-medium mb-1">Originele Foto's</h4>
-                                <p className="text-gray-400 text-sm">Bevat de onbewerkte RAW/JPG bestanden, direct uit de camera, georganiseerd per categorie.</p>
-                            </div>
-                            <div className="bg-neutral-800/50 p-6 rounded-lg border border-white/5 hover:border-brand-accent/20 transition-colors">
-                                <h4 className="text-white font-medium mb-1">Portfolio App</h4>
-                                <p className="text-gray-400 text-sm">Deze interactieve applicatie fungeert als presentatielaag, inclusief reflecties en technische data.</p>
-                            </div>
-                        </div>
-                    </div>
-                </motion.section>
+                {/*  */}
 
                 {/* Nawoord */}
                 <motion.section id="nawoord" variants={sectionVariants}>
                     <div className="flex items-baseline space-x-4 mb-8 border-b border-white/10 pb-4">
-                        <span className="text-brand-accent font-mono text-sm">03.</span>
+                        <span className="text-brand-accent font-mono text-sm">02.</span>
                         <h2 className="text-3xl font-serif text-white">Nawoord</h2>
                     </div>
                     <div className="prose prose-invert prose-lg text-gray-300 leading-relaxed">
@@ -109,6 +69,7 @@ export default function Info() {
                         </p>
                     </div>
                 </motion.section>
+
             </motion.div>
 
         </div>

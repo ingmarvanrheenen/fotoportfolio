@@ -6,8 +6,6 @@ export default function TableOfContents() {
     const sections = [
         { number: '01', title: 'Voorblad', path: '/', icon: <Home className="h-5 w-5" /> },
         { number: '02', title: 'Voorwoord', path: '/info#voorwoord', icon: <InfoIcon className="h-5 w-5" /> },
-        { number: '03', title: 'Inhoudsopgave', path: '/toc', active: true, icon: <List className="h-5 w-5" /> },
-        { number: '04', title: 'Mappenstructuur', path: '/info#structuur', icon: <InfoIcon className="h-5 w-5" /> },
         { number: '05', title: 'Bewegingsfoto’s', path: '/gallery', sub: true },
         { number: '06', title: 'Portretten Studio', path: '/gallery', sub: true },
         { number: '07', title: 'Architectuur / Landschap', path: '/gallery', sub: true },

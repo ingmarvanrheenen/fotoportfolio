@@ -11,7 +11,7 @@ export default function Home() {
     const scrollRef = useRef(null);
 
     // Get 3 featured items (e.g., from 'best' or varied categories)
-    const featuredItems = portfolioItems.filter(item => ['b1', 'm2', 'p1'].includes(item.id));
+    const featuredItems = portfolioItems.filter(item => ['pr2', 'a1', 'p1'].includes(item.id));
 
     return (
         <div className="relative overflow-x-hidden">

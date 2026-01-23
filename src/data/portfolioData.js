@@ -86,10 +86,10 @@ export const portfolioItems = [
     {
         id: 'p1',
         categoryId: 'portrait',
-        title: 'De CEO',
+        title: 'Intense Blik',
         image: Portrait1Image,
         imageOriginal: Portrait1Original,
-        description: 'Zakelijk portret met een naderbare uitstraling.',
+        description: 'Intense blik van een model in Rembrandt-verlichting.',
         whyInteresting: 'De blik is direct en zelfverzekerd.',
         critique: 'Rembrandt-verlichting is goed gelukt, schaduwzijde niet te donker.',
         specs: { shutter: '1/160s', aperture: 'f/8', iso: '100', camera: 'Sony A7IV' },
