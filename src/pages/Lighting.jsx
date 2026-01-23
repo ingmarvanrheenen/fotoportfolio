@@ -78,7 +78,7 @@ export default function Lighting() {
                                 Item
                             </div>
                             {/* Light Front (Bottom) */}
-                            <div className="absolute bottom-6 left-1/2 w-0 h-0">
+                            <div className="absolute bottom-10 left-1/2 w-0 h-0">
                                 {/* Light Source Circle */}
                                 <div className="absolute top-1/2 left-1/2 w-6 h-6 bg-white/80 rounded-full shadow-[0_0_30px_10px_rgba(255,255,255,0.15)] relative z-20 -translate-x-1/2 -translate-y-1/2"></div>
 
@@ -88,7 +88,7 @@ export default function Lighting() {
                                 {/* Beam (Pointing Up) */}
                                 <div
                                     className="absolute bottom-0 left-1/2 w-32 h-48 bg-gradient-to-t from-white/10 to-transparent transform -translate-x-1/2 origin-bottom pointer-events-none blur-md z-10"
-                                    style={{ clipPath: 'polygon(0% 0%, 100% 0%, 65% 100%, 35% 100%)' }}
+                                    style={{ clipPath: 'polygon(0% 0%, 100% 0%, 60% 100%, 40% 100%)' }}
                                 ></div>
                             </div>
                         </div>
