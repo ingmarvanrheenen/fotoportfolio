@@ -70,7 +70,7 @@ export const portfolioItems = [
         description: 'Het beslissende moment tijdens de lokale atletiekwedstrijd.',
         whyInteresting: 'De gezichtsuitdrukking toont pure wilskracht en uitputting.',
         critique: 'De onscherpe achtergrond isoleert het onderwerp goed. De sluitertijd was perfect om de beweging te bevriezen maar toch snelheid te suggereren.',
-        specs: { shutter: '1/1000s', aperture: 'f/2.8', iso: '400', camera: 'Sony A7IV' },
+        specs: { shutter: '1/125s', aperture: 'f/7.1', iso: '100', camera: 'NIKON D5300' },
         analysis: {
             composition: 'Centraal perspectief met leidende lijnen van de baan.',
             frame: 'Ruim kader om de context van het stadion te tonen.',
@@ -156,7 +156,7 @@ export const portfolioItems = [
         description: 'Productfotografie met low-key verlichting.',
         whyInteresting: 'De mysterieuze sfeer past bij het merk.',
         critique: 'Randverlichting (rim light) scheidt het zwarte flesje goed van de zwarte achtergrond.',
-        specs: { shutter: '1/200s', aperture: 'f/11', iso: '100', camera: 'Sony A7IV' },
+        specs: { shutter: '1/100s', aperture: 'f/18', iso: '200', camera: 'NIKON D5600' },
         analysis: {
             composition: 'Asymmetrisch',
             frame: 'Medium',
