@@ -48,6 +48,9 @@ import Pers5Image from '../assets/personal/cover/five/lamp_before.jpg'; // Using
 import Pers6Image from '../assets/personal/cover/boom_after.jpg';
 // Assuming boom_before.jpg exists or single image
 
+import Pers7Image from '../assets/personal/cover/six/kwal_after.jpg';
+import Pers7Original from '../assets/personal/cover/six/kwal_before.jpg';
+
 
 // Motion Item 1 Images
 import Motion1Image from '../assets/motion/cover/one/motion_after.jpg';
@@ -196,7 +199,7 @@ export const portfolioItems = [
         description: 'Een spel van licht en schaduw onder de pier.',
         whyInteresting: 'De ritmische herhaling van de betonnen pilaren creëert diepte en structuur.',
         critique: 'De warme gloed van de zon op het kille beton zorgt voor een interessant contrast in temperatuur en materiaal.',
-        specs: { shutter: '', aperture: '', iso: '', camera: '' },
+        specs: { shutter: '1/250s', aperture: 'f/6', iso: '720', camera: 'NIKON D5200' },
         analysis: { composition: 'Repetitie en lijnenperspectief.', frame: 'Totaal shot', format: 'Landschap', perspective: 'Ooghoogte', lighting: { direction: 'Zijlicht (gouden uur)', intensity: 'Hard', source: 'Zon' }, depthOfField: 'Grote scherptediepte.' },
         editing: { process: 'Contrast verhoogd om de texturen in het zand te benadrukken.', comparison: ['Retouch'] }
     },
@@ -209,7 +212,7 @@ export const portfolioItems = [
         description: 'De wind gevangen in het helmgras.',
         whyInteresting: 'De textuur van het zand en de dynamiek van het gras vertellen het verhaal van de kust.',
         critique: 'Het lage standpunt trekt de kijker direct het landschap in, waarbij de voorgrond de diepte versterkt.',
-        specs: { shutter: '', aperture: '', iso: '', camera: '' },
+        specs: { shutter: '1/160s', aperture: 'f/6.3', iso: '200', camera: 'NIKON D5200' },
         analysis: { composition: 'Diagonaal (duinlijn).', frame: 'Medium shot', format: 'Landschap', perspective: 'Kikvorsperspectief', lighting: { direction: 'Strijklicht', intensity: 'Zacht', source: 'Natuurlijk' }, depthOfField: 'Focus op voorgrondgras.' },
         editing: { process: 'Warme tonen versterkt.', comparison: ['Retouch'] }
     },
@@ -222,7 +225,7 @@ export const portfolioItems = [
         description: 'Industriële stilte in de vroege morgen.',
         whyInteresting: 'De mist abstraheert de vormen van de bouwkraan, waardoor een minimalistisch beeld ontstaat.',
         critique: 'De subtiele kleurovergangen in de lucht (van koel naar warm) geven sfeer aan het silhouet.',
-        specs: { shutter: '', aperture: '', iso: '', camera: '' },
+        specs: { shutter: '1/640s', aperture: 'f/11', iso: '100', camera: 'NIKON D5200' },
         analysis: { composition: 'Derdenregel (kraan).', frame: 'Ver weg', format: 'Landschap', perspective: 'Neutraal', lighting: { direction: 'Diffuus', intensity: 'Zwak', source: 'Atmosferisch' }, depthOfField: 'Oneindig' },
         editing: { process: 'Nevelreductie toegepast voor iets meer definitie.', comparison: ['Retouch'] }
     },
@@ -235,7 +238,7 @@ export const portfolioItems = [
         description: 'Patronen en structuren in boomschors.',
         whyInteresting: 'De close-up onthult details die normaal aan het oog ontsnappen, bijna als een abstract schilderij.',
         critique: 'De verticale lijnen trekken de blik omhoog, en het mos voegt een mooie kleurvariatie toe aan de bruine tinten.',
-        specs: { shutter: '', aperture: '', iso: '', camera: '' },
+        specs: { shutter: '1/640s', aperture: 'f/11', iso: '100', camera: 'NIKON D5200' },
         analysis: { composition: 'Centraal / Textuur.', frame: 'Close-up / Kikvorsperspectief', format: 'Portret', perspective: 'Kikvorsperspectief', lighting: { direction: 'Diffuus', intensity: 'Gelijkmatig', source: 'Schaduw' }, depthOfField: 'Ondiep makro-effect.' },
         editing: { process: 'Scherpte en structuur (clarity) verhoogd.', comparison: ['Retouch'] }
     },
@@ -264,6 +267,26 @@ export const portfolioItems = [
         specs: { shutter: '', aperture: '', iso: '', camera: '' },
         analysis: { composition: 'Diagonaal / Asymmetrisch.', frame: 'Totaal', format: 'Portret', perspective: 'Ooghoogte', lighting: { direction: 'Zonlicht', intensity: 'Helder', source: 'Natuurlijk' }, depthOfField: 'Alles scherp.' },
         editing: { process: 'Blauwe lucht verzadigd en contrast in het riet verhoogd.', comparison: ['Retouch'] }
+    },
+    {
+        id: 'pers7',
+        categoryId: 'personal',
+        title: 'Kwal',
+        image: Pers7Image,
+        imageOriginal: Pers7Original,
+        description: 'Een kwal die door het donkere water zweeft.',
+        whyInteresting: 'De symmetrie en doorschijnendheid van de kwal tegen de donkere achtergrond.',
+        critique: 'Het zachte, natuurlijke licht benadrukt de details van de tentakels en de bel.',
+        specs: { shutter: '1/320s', aperture: 'f/6.3', iso: '800', camera: 'NIKON D5300' },
+        analysis: {
+            composition: 'Centraal',
+            frame: 'Close-up',
+            format: 'Rechthoek',
+            perspective: 'Bovenaanzicht',
+            lighting: { direction: 'Diffuus', intensity: 'Zacht', source: 'Natuurlijk' },
+            depthOfField: 'Focus op de kwal',
+        },
+        editing: { process: 'Contrast verhoogd en kleurbalans aangepast.', comparison: ['Retouch'] }
     },
 
     // --- Architecture ---
