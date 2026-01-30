@@ -6,9 +6,21 @@ import ArchCover from '../assets/Architectuur/cover/architecture_cover.jpg';
 import ProductCover from '../assets/product/cover/product_cover.jpg';
 import BestCover from '../assets/Mooiste/cover/mooiste_cover.jpg';
 
+// Best Item 1 Images
+import Best1Image from '../assets/Mooiste/one/mr_peer_after.jpg';
+import Best1Original from '../assets/Mooiste/one/mr_peer_before.jpg';
+
 // Architecture Item 1 Images
 import Arch1Image from '../assets/Architectuur/one/stairs_after.jpg';
 import Arch1Original from '../assets/Architectuur/one/stairs_before.jpg';
+
+// Architecture Item 2 Images
+import Arch2Image from '../assets/Architectuur/two/arc_after.jpg';
+import Arch2Original from '../assets/Architectuur/two/arc_before.jpg';
+
+// Architecture Item 3 Images
+import Arch3Image from '../assets/Architectuur/three/thomas_de_trein_after.jpg';
+import Arch3Original from '../assets/Architectuur/three/thomas_de_trein_before.jpg';
 
 // Product Item 1 Images
 import Product1Image from '../assets/product/one/product_after.jpg';
@@ -55,6 +67,10 @@ import Pers7Original from '../assets/personal/cover/six/kwal_before.jpg';
 // Motion Item 1 Images
 import Motion1Image from '../assets/motion/cover/one/motion_after.jpg';
 import Motion1Original from '../assets/motion/cover/one/motion_before.JPG';
+
+// Motion Item 2 Images
+import Motion2Image from '../assets/motion/cover/two/car_after.jpg';
+import Motion2Original from '../assets/motion/cover/two/car_before.jpg';
 
 export const portfolioCategories = [
     {
@@ -114,7 +130,7 @@ export const portfolioItems = [
         imageOriginal: Motion1Original,
         description: 'In een snele oogomslach een foto van uit de auto.',
         whyInteresting: 'De snelheid en dynamiek van de foto.',
-        critique: 'De bewegingsonscherpte van de voorbijrazende auto contrasteert sterk met de statische architectuur. De grauwe lucht draagt bij aan de stedelijke sfeer.',
+        critique: 'De bewegingsonscherpte van de voorbijrazende auto contrasteert sterk met de statische architectuur. De grauwe lucht draagt bij aan de stedelijke sfeer. Ook vind ik de compositie erg sterk met de diagonale lijnen van het gebouw en de auto.',
         specs: { shutter: '1/125s', aperture: 'f/7.1', iso: '100', camera: 'NIKON D5300' },
         analysis: {
             composition: 'Diagonale lijnen van het gebouw en de auto.',
@@ -126,6 +142,26 @@ export const portfolioItems = [
         },
         editing: { process: 'Contrast verhoogd, schaduwen opgehelderd, kleurtemperatuur warmer.', comparison: ['Crop', 'Color Grade'] }
     },
+    {
+        id: 'm2',
+        categoryId: 'motion',
+        title: 'Snelheid',
+        image: Motion2Image,
+        imageOriginal: Motion2Original,
+        description: 'Autosnelweg bij nacht met lange sluitertijd (of panning).',
+        whyInteresting: 'De geblurde achtergrond en de auto in het midden van het beeld geeft een gevoel van enorme snelheid.',
+        critique: 'De geblurde achtergrond maakt het zo dat de auto meer naar voren komt alleen personlijk zou ik liever de foto scherper hebben willen hebben genomen.',
+        specs: { shutter: '1/125s', aperture: 'f/25', iso: '100', camera: 'NIKON D5600' },
+        analysis: {
+            composition: 'Diagonaal',
+            frame: 'Totaal',
+            format: 'Landschap',
+            perspective: 'Ooghoogte',
+            lighting: { direction: 'Kunstlicht', intensity: 'Contrast', source: 'Straatverlichting/Koplampen' },
+            depthOfField: 'Groot',
+        },
+        editing: { process: 'Contrast en kleurverzadiging.', comparison: ['Color', 'Contrast'] }
+    },
 
     // --- Portrait ---
     {
@@ -136,7 +172,7 @@ export const portfolioItems = [
         imageOriginal: Portrait1Original,
         description: 'Zwart-wit portret met een krachtig handgebaar.',
         whyInteresting: 'De blik is direct en zelfverzekerd.',
-        critique: 'De omzetting naar zwart-wit versterkt het drama. De schaduwen zijn gewaagd.',
+        critique: 'De omzetting naar zwart-wit versterkt het drama. De schaduwen zijn .',
         specs: { shutter: '1/160s', aperture: 'f/8', iso: '100', camera: 'NIKON D5600' },
         analysis: {
             composition: 'Centraal, hand vormt een kader.',
@@ -251,7 +287,7 @@ export const portfolioItems = [
         description: 'De schoonheid van techniek in detail.',
         whyInteresting: 'De gloeidraad vormt een perfecte spiraal die licht geeft in de duisternis.',
         critique: 'Het sterke contrast tussen de felle draad en de zwarte achtergrond maakt dit een krachtig grafisch beeld.',
-        specs: { shutter: '', aperture: '', iso: '', camera: '' },
+        specs: { shutter: '1/640s', aperture: 'f/11', iso: '100', camera: 'NIKON D5200' },
         analysis: { composition: 'Centraal.', frame: 'Macro', format: 'Landschap', perspective: 'Recht van voren', lighting: { direction: 'Interne bron', intensity: 'Fel', source: 'Kunstlicht' }, depthOfField: 'Zeer ondiep (focus op draad).' },
         editing: { process: 'Hooglichten beheerst, zwartpunt verlaagd.', comparison: ['Retouch'] }
     },
@@ -310,6 +346,46 @@ export const portfolioItems = [
         },
         editing: { process: 'Keystone correctie, blauwverzadiging verhoogd en contrast verhoogd.', comparison: ['Perspective', 'Saturation'] }
     },
+    {
+        id: 'a2',
+        categoryId: 'architecture',
+        title: 'Modern Lijnenspel',
+        image: Arch2Image,
+        imageOriginal: Arch2Original,
+        description: 'Strakke lijnen en geometrische vormen in moderne architectuur.',
+        whyInteresting: 'De interactie tussen licht en de structuur van het gebouw.',
+        critique: 'De compositie benadrukt de hoogte en de ritmiek van de gevel.',
+        specs: { shutter: '1/125s', aperture: 'f/6.3', iso: '1250', camera: 'NIKON D5300' },
+        analysis: {
+            composition: 'Diagonaal / Geometrisch',
+            frame: 'Totaalshot',
+            format: 'Landschap',
+            perspective: 'Kikkerperspectief',
+            lighting: { direction: 'Diffuus', intensity: 'Zacht', source: 'Natuurlijk' },
+            depthOfField: 'Groot (alles scherp)',
+        },
+        editing: { process: 'Perspectiefcorrectie en contrastverbetering.', comparison: ['Perspective', 'Contrast'] }
+    },
+    {
+        id: 'a3',
+        categoryId: 'architecture',
+        title: 'Thomas de Trein',
+        image: Arch3Image,
+        imageOriginal: Arch3Original,
+        description: 'Een speels ogend object in een stedelijke omgeving.',
+        whyInteresting: 'De felle kleuren en de grappige vorm die doet denken aan een locomotief.',
+        critique: 'De compositie isoleert het onderwerp van de drukke achtergrond.',
+        specs: { shutter: '1/10s', aperture: 'f/5.6', iso: '400', camera: 'NIKON D5300' },
+        analysis: {
+            composition: 'Centraal',
+            frame: 'Medium',
+            format: 'Landschap',
+            perspective: 'Ooghoogte',
+            lighting: { direction: 'Diffuus', intensity: 'Matig', source: 'Natuurlijk' },
+            depthOfField: 'Scherp',
+        },
+        editing: { process: 'Kleurversterking en lokaal contrast.', comparison: ['Color', 'Contrast'] }
+    },
 
     // --- Product ---
     {
@@ -354,4 +430,24 @@ export const portfolioItems = [
     },
 
     // --- Best Of ---
+    {
+        id: 'b1',
+        categoryId: 'best',
+        title: 'Mr. Peer',
+        image: Best1Image,
+        imageOriginal: Best1Original,
+        description: 'Een karaktervol portret met een unieke uitstraling.',
+        whyInteresting: 'Het dier heeft een geweldige uitstraling en is gewoon een toffe peer in mijn ogen, en de foto is haarscherp waardoor je elk detail kunt zien.',
+        critique: 'De scherpte is technisch perfect uitgevoerd, waardoor de textuur van het dier bijna voelbaar is en het karakter sterk naar voren komt.',
+        specs: { shutter: '1/30s', aperture: 'f/5.6', iso: '400', camera: 'NIKON D5300' },
+        analysis: {
+            composition: 'Regel van 3e',
+            frame: 'Medium',
+            format: 'Portret',
+            perspective: 'Ooghoogte',
+            lighting: { direction: 'Zacht', intensity: 'Gemiddeld', source: 'Natuurlijk' },
+            depthOfField: 'Scherp op onderwerp'
+        },
+        editing: { process: 'Basis correcties en detailverbetering.', comparison: ['Retouch'] }
+    },
 ];
